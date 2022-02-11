@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <!--Importing Jquerry Ui Library-->
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Word Association</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <title>Association word game</title>
 </head>
-
 <body>
-    <button class="button">Sound Effects: ON</button>
 
-<div class="draggable" data-id='a'img src=""></div>
-<div class="droppable" data-id='a'>imgcontainer</div>
-<div class="draggable" data-id='b'>draggable b</div>
-<div class="droppable" data-id='b'>droppable b</div>
-<div class="draggable" data-id='c'>draggable c</div>
-<div class="droppable" data-id='c'>droppable c</div>
+<h1>Association Word Game</h1>
+<h2>Start the game by dragging the word into the corresponding image 🤩</h2>
+<h2>You are going to get the correct or incorrect sound after you get the word dropped 👌</h2>
+<h2>Don't feel bad if you fail to get the correct results.You are learning🤗</h2>
+<h2>Once you finish the game,you can play it again by refreshing the page👍</h3>
+
+
+<div id="drop1" class="droppable">
+    <img src="https://i.pinimg.com/736x/91/cc/5d/91cc5de7fa19b88d3b0381dc74814bb4.jpg" alt="bird" height="280" width="280">
+</div>
+<div id="drop2" class="droppable">
+    <img src="https://i.pinimg.com/736x/b9/18/48/b91848b5ab477b0b57c0685236f0b272.jpg" alt="goat" height="280" width="280">
+</div>
+<div id="drop3" class="droppable">
+    <img src="https://i.pinimg.com/originals/47/5e/b7/475eb74bc8e4b0e7440e2003d9607f09.jpg" alt="rabbit" height="280" width="280">
+</div>
+
+<div id="drag1" class="draggable">Bird</div>
+<div id="drag2" class="draggable">Goat</div>
+<div id="drag3" class="draggable">Rabbit</div>
+
+<script src="script.js"></script>
 
 </body>
-<script src="main.js"></script>
+
 </html>
